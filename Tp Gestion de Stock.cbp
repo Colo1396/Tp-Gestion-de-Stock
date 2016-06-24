@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tp Gestion de Stock" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Tp Gestion de Stock" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Tp Gestion de Stock" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="ArtDeposito.cpp" />
+		<Unit filename="ArtDeposito.h" />
+		<Unit filename="ArtUbicacion.cpp" />
+		<Unit filename="ArtUbicacion.h" />
+		<Unit filename="Articulo.cpp" />
+		<Unit filename="Articulo.h" />
+		<Unit filename="Camion.cpp" />
+		<Unit filename="Camion.h" />
+		<Unit filename="Configuracion.cpp" />
+		<Unit filename="Configuracion.h" />
+		<Unit filename="Faltantes.cpp" />
+		<Unit filename="Faltantes.h" />
+		<Unit filename="FunYProd.cpp" />
+		<Unit filename="FunYProd.h" />
+		<Unit filename="LDeposito.cpp" />
+		<Unit filename="LDeposito.h" />
+		<Unit filename="ListaArticulo.cpp" />
+		<Unit filename="ListaArticulo.h" />
+		<Unit filename="ListaCalle.cpp" />
+		<Unit filename="ListaCalle.h" />
+		<Unit filename="ListaFaltantes.cpp" />
+		<Unit filename="ListaFaltantes.h" />
+		<Unit filename="ListaPesoAcumulado.cpp" />
+		<Unit filename="ListaPesoAcumulado.h" />
+		<Unit filename="ListaPiso.cpp" />
+		<Unit filename="ListaPiso.h" />
+		<Unit filename="ListaVentas.cpp" />
+		<Unit filename="ListaVentas.h" />
+		<Unit filename="PesoAcumulado.cpp" />
+		<Unit filename="PesoAcumulado.h" />
+		<Unit filename="PilaArtUb.cpp" />
+		<Unit filename="PilaArtUb.h" />
+		<Unit filename="PilaCamion.cpp" />
+		<Unit filename="PilaCamion.h" />
+		<Unit filename="Reposicion.cpp" />
+		<Unit filename="Reposicion.h" />
+		<Unit filename="Solicitud.cpp" />
+		<Unit filename="Solicitud.h" />
+		<Unit filename="Ventas.cpp" />
+		<Unit filename="Ventas.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
