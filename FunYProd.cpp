@@ -199,7 +199,7 @@ char* cpToken;
 
 }
 //***************************************************************
-//------- Busca y devuelve el Articulo en La lista maestra de articulas ------------
+//BUSCA Y DEVUELVE EL ARTICULO DE LA LSTA ARTICULOS
 Articulo buscarArticulo(ListaArt &listaArt, int codart){
 	PrtNodoListaArt ptrArticulo = primero(listaArt);
 	bool encontrado=false;
@@ -215,11 +215,10 @@ Articulo buscarArticulo(ListaArt &listaArt, int codart){
 }
 
 void ingresoStock(Config &configuracion, ListaCalle &listaC, ListaArt &listaArt, ListaArtDeposito &listaArtDep,Reposicion &reposicion){
-cout<<"INGRESO DE ARTICULO"<<endl; //Queda mas lindo mostrar que comienza este proceso :D
+cout<<"INGRESO DE ARTICULO"<<endl;
 cout<<"Cod. Articulo: "<< getCodArt(reposicion) <<endl;
 cout<<"Cantidad: "<< getCant(reposicion) << endl;
 int codArti=0;
-/****************************ACA HAY Q CARGAR SI LA PILA ESTA VACIA******************************/
 if(listaVacia(listaArtDep)){
 // SI ESE ARTICULO NUEVO, ES EL PRIMERO AGREGADO
         PrtNodoListaArt ptrArt= primero(listaArt);
@@ -246,17 +245,17 @@ if(listaVacia(listaArtDep)){
 			adicionarFinal(listaC, piso1);
 			ArtDeposito artDep1;
 			crearArtDep(artDep1);
-			//AGREGADO
+			//CORRECCION
 			PtrNodoPisoDep pisoDep=primero(piso1);
             setPisoDep(artDep1,pisoDep);
             //
 			setCodArtDep(artDep1, getCodArt(reposicion));
-			//setPisoDep(artDep1, primero(primero(listaC)->piso1));    //NOOOO FUNCAAAAAA....... >.<
+			//setPisoDep(artDep1, primero(primero(listaC)->piso1));
 			adicionarFinal(listaArtDep,artDep1);
 			cout<<"Primer articulo guardado exitosamente"<<endl;
 		}
 		else{
-			cout<<"\tEl articulo no se encuentra"<<endl;
+			cout<<"El articulo no se encuentra"<<endl;
 		}
 }
 else{
@@ -288,7 +287,6 @@ else{
                 encontradoP= true;                                                                      //ARTICULO EXISTENTE
                 cout<<"\tActualizacion de stock de articulo existente"<<endl;
                 cout<<cantAct<<getCantArtUb((top(ptrPiso->pilUb))->datoArtUb)<<endl;
-/*********************************HASTA ACA ANDA******************************/
             }
             else{
 					push(pilaAux, pop(ptrPiso->pilUb) );   //SACA LOS ARTICULOS Y LOS PONE EN LA PILA AUXILIAR
@@ -301,11 +299,11 @@ else{
 //SI EL ARTICULO NO EXISTE EN DEPOSITO: SE SOLICITARA UNA NUEVA POSICIÓN
 		else{
 		    bool aRegist = false; //FLAG PARA ARTICULO REGISTRADO
-			int contadorC=0,contadorP=0;
-			int longUb=0; //POSTERIORMENTE SON UTILIZADOS DE CONTADORES DE CALLES Y DE PISOS
+			int contadorC=0,contadorP=0; //POSTERIORMENTE SON UTILIZADOS DE CONTADORES DE CALLES Y DE PISOS
+			int longUb=0;
 
 			PrtNodoListaArt ptrArt= primero(listaArt);
-			codArti=reposicion.cod_articulo;/**cambiamos esto,e deimo un valor**/
+			codArti=reposicion.cod_articulo;
 			bool encont=false;
 			while (ptrArt !=NULL && encont !=true){
                 if (getCodArt(ptrArt->datoLArt)==codArti){          //COMPROBAR EXISTENCIA
@@ -332,11 +330,9 @@ else{
 					while(ptrP != NULL && !aRegist){  //RECORRO LISTA PISOS
 						contadorP++;
 						if (!pilaVacia(ptrP->pilUb)){
-//NO TENGO LA MAS MINIMA IDEA DE PORQUE NO LO TOMA, LA LOGICA QUE USE CREO ESTA BIEN PERO NO SE PORQUE NO LO TOMA
-//longUb = getConfigU(top(ptrP->pilUb)->datoArtUb);
                         longUb=ptrP->pilUb.top->datoArtUb.u;
                      }
-                          if (longUb < getConfigU(configuracion)&& !aRegist)/****RO LA MANQUIASTE****/{  //MIENTRAS LA LONGITUD ES MENOR A LO DETERMINADO EN CONFIGURACION
+                          if (longUb < getConfigU(configuracion)&& !aRegist){  //MIENTRAS LA LONGITUD ES MENOR A LO DETERMINADO EN CONFIGURACION Y SEA DISTINYO DE AREGIST
 								setC(artNUb,contadorC);
 								setP(artNUb,contadorP);
 								setU(artNUb,longUb+1);
@@ -349,7 +345,7 @@ else{
 								aRegist = true;   //CAMBIO EL FLAG
                                 cout<<artNUb.datoArt.codart<<" "<<artNUb.c<<" "<<getP(artNUb)<<" "<<getU(artNUb)<<" "<<getCantArtUb(artNUb)<<endl;
 
-								cout<<"NUEVO ARTICULO GUARDADO CON EXITO"<<endl;
+								cout<<"Nuevo articulo guardado exitosamente"<<endl;
 							}
 
 					//}
@@ -371,7 +367,7 @@ else{
 						cout<<"\tNuevo piso creado "<<contadorC<<", nuevo articulo guardado exitosamente"<<endl;
 					}
 					contadorP=0;
-					ptrC = siguiente(listaC, ptrC); //NO ME FUNCABA EL SIGUIENTEEEEEEEEEEEEE
+					ptrC = siguiente(listaC, ptrC);
 				}
 
 // SI NECESITO CREAR UNA NUEVA CALLE
@@ -387,7 +383,7 @@ else{
 					setCodArtDep(artDepNuevo, getCodArt(reposicion));       //
 					setPisoDep(artDepNuevo, ptrPiso2);                      //AGREGO EL NUEVO ARTICULO AL INDICE
 					adicionarFinal(listaArtDep,artDepNuevo);                //
-					cout<<"\Nueva calle n°: "<<contadorC+1<<". Nuevo articulo guardado exitosamente."<<endl;
+					cout<<"\Nueva calle: "<<contadorC+1<<". Nuevo articulo guardado exitosamente."<<endl;
 				}
 			}
 			else{
