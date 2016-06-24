@@ -176,7 +176,7 @@
 1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\artdeposito.cpp
 	"ArtDeposito.h"
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\artdeposito.h
+1466736790 c:\users\galva\documents\tp-gestion-de-stock\artdeposito.h
 	"ListaPiso.h"
 
 1466736278 c:\users\galva\documents\tp-gestion-de-stock\listapiso.h
@@ -185,10 +185,10 @@
 1466735645 c:\users\galva\documents\tp-gestion-de-stock\pilaartub.h
 	"ArtUbicacion.h"
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\artubicacion.h
+1466736790 c:\users\galva\documents\tp-gestion-de-stock\artubicacion.h
 	"Articulo.h"
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\articulo.h
+1466736790 c:\users\galva\documents\tp-gestion-de-stock\articulo.h
 
 1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\articulo.cpp
 	"Articulo.h"
@@ -202,17 +202,17 @@
 	"Camion.h"
 	<iostream>
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\camion.h
+1466736790 c:\users\galva\documents\tp-gestion-de-stock\camion.h
 
 1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\configuracion.cpp
 	"Configuracion.h"
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\configuracion.h
+1466736790 c:\users\galva\documents\tp-gestion-de-stock\configuracion.h
 
 1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\faltantes.cpp
 	"Faltantes.h"
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\faltantes.h
+1466737370 c:\users\galva\documents\tp-gestion-de-stock\faltantes.h
 
 1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\funyprod.cpp
 	<cstdlib>
@@ -239,7 +239,7 @@
 	"Reposicion.h"
 	"Solicitud.h"
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\funyprod.h
+1466736790 c:\users\galva\documents\tp-gestion-de-stock\funyprod.h
 	"ArtDeposito.h"
 	"Articulo.h"
 	"ArtUbicacion.h"
@@ -261,13 +261,13 @@
 	"Solicitud.h"
 	"Ventas.h"
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\ldeposito.h
+1466736790 c:\users\galva\documents\tp-gestion-de-stock\ldeposito.h
 	"ArtDeposito.h"
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\listaarticulo.h
+1466736790 c:\users\galva\documents\tp-gestion-de-stock\listaarticulo.h
 	"Articulo.h"
 
-1466735645 c:\users\galva\documents\tp-gestion-de-stock\listacalle.h
+1466736790 c:\users\galva\documents\tp-gestion-de-stock\listacalle.h
 	"ListaPiso.h"
 
 1466736278 c:\users\galva\documents\tp-gestion-de-stock\listafaltantes.h
