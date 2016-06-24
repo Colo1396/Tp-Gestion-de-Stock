@@ -173,48 +173,48 @@
 1466426392 source:c:\users\galva\desktop\anda o anda carajo\tp gestion de stock\tp gestion de stock\ventas.cpp
 	"Ventas.h"
 
-1466545586 source:c:\users\galva\documents\tp-gestion-de-stock\artdeposito.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\artdeposito.cpp
 	"ArtDeposito.h"
 
-1466567846 c:\users\galva\documents\tp-gestion-de-stock\artdeposito.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\artdeposito.h
 	"ListaPiso.h"
 
-1465833806 c:\users\galva\documents\tp-gestion-de-stock\listapiso.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\listapiso.h
 	"PilaArtUb.h"
 
-1466542188 c:\users\galva\documents\tp-gestion-de-stock\pilaartub.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\pilaartub.h
 	"ArtUbicacion.h"
 
-1465952814 c:\users\galva\documents\tp-gestion-de-stock\artubicacion.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\artubicacion.h
 	"Articulo.h"
 
-1465916804 c:\users\galva\documents\tp-gestion-de-stock\articulo.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\articulo.h
 
-1465829450 source:c:\users\galva\documents\tp-gestion-de-stock\articulo.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\articulo.cpp
 	"Articulo.h"
 	<stdio.h>
 	<string.h>
 
-1465952814 source:c:\users\galva\documents\tp-gestion-de-stock\artubicacion.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\artubicacion.cpp
 	"ArtUbicacion.h"
 
-1466459202 source:c:\users\galva\documents\tp-gestion-de-stock\camion.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\camion.cpp
 	"Camion.h"
 	<iostream>
 
-1465836330 c:\users\galva\documents\tp-gestion-de-stock\camion.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\camion.h
 
-1466463942 source:c:\users\galva\documents\tp-gestion-de-stock\configuracion.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\configuracion.cpp
 	"Configuracion.h"
 
-1465836536 c:\users\galva\documents\tp-gestion-de-stock\configuracion.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\configuracion.h
 
-1466711018 source:c:\users\galva\documents\tp-gestion-de-stock\faltantes.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\faltantes.cpp
 	"Faltantes.h"
 
-1466706528 c:\users\galva\documents\tp-gestion-de-stock\faltantes.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\faltantes.h
 
-1466710734 source:c:\users\galva\documents\tp-gestion-de-stock\funyprod.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\funyprod.cpp
 	<cstdlib>
 	<stdio.h>
 	<conio.h>
@@ -239,7 +239,7 @@
 	"Reposicion.h"
 	"Solicitud.h"
 
-1466710734 c:\users\galva\documents\tp-gestion-de-stock\funyprod.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\funyprod.h
 	"ArtDeposito.h"
 	"Articulo.h"
 	"ArtUbicacion.h"
@@ -261,80 +261,80 @@
 	"Solicitud.h"
 	"Ventas.h"
 
-1466424100 c:\users\galva\documents\tp-gestion-de-stock\ldeposito.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\ldeposito.h
 	"ArtDeposito.h"
 
-1465832882 c:\users\galva\documents\tp-gestion-de-stock\listaarticulo.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\listaarticulo.h
 	"Articulo.h"
 
-1465833978 c:\users\galva\documents\tp-gestion-de-stock\listacalle.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\listacalle.h
 	"ListaPiso.h"
 
-1466377398 c:\users\galva\documents\tp-gestion-de-stock\listafaltantes.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\listafaltantes.h
 	"Faltantes.h"
 
-1466432452 c:\users\galva\documents\tp-gestion-de-stock\listapesoacumulado.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\listapesoacumulado.h
 	"PesoAcumulado.h"
 
-1466429198 c:\users\galva\documents\tp-gestion-de-stock\pesoacumulado.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\pesoacumulado.h
 
-1466429004 c:\users\galva\documents\tp-gestion-de-stock\listaventas.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\listaventas.h
 	"Ventas.h"
 
-1466429260 c:\users\galva\documents\tp-gestion-de-stock\ventas.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\ventas.h
 
-1466465224 c:\users\galva\documents\tp-gestion-de-stock\pilacamion.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\pilacamion.h
 	"Camion.h"
 
-1465835168 c:\users\galva\documents\tp-gestion-de-stock\reposicion.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\reposicion.h
 
-1465835336 c:\users\galva\documents\tp-gestion-de-stock\solicitud.h
+1466735645 c:\users\galva\documents\tp-gestion-de-stock\solicitud.h
 
-1466426426 source:c:\users\galva\documents\tp-gestion-de-stock\ldeposito.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\ldeposito.cpp
 	"LDeposito.h"
 
-1466377840 source:c:\users\galva\documents\tp-gestion-de-stock\listaarticulo.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\listaarticulo.cpp
 	"ListaArticulo.h"
 
-1466730427 source:c:\users\galva\documents\tp-gestion-de-stock\listacalle.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\listacalle.cpp
 	"ListaCalle.h"
 
-1466377760 source:c:\users\galva\documents\tp-gestion-de-stock\listafaltantes.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\listafaltantes.cpp
 	"ListaFaltantes.h"
 
-1466432496 source:c:\users\galva\documents\tp-gestion-de-stock\listapesoacumulado.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\listapesoacumulado.cpp
 	"ListaPesoAcumulado.h"
 	"ListaArticulo.h"
 
-1466730427 source:c:\users\galva\documents\tp-gestion-de-stock\listapiso.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\listapiso.cpp
 	"ListaPiso.h"
 
-1466429112 source:c:\users\galva\documents\tp-gestion-de-stock\listaventas.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\listaventas.cpp
 	"ListaVentas.h"
 
-1466429198 source:c:\users\galva\documents\tp-gestion-de-stock\pesoacumulado.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\pesoacumulado.cpp
 	"PesoAcumulado.h"
 
-1466730427 source:c:\users\galva\documents\tp-gestion-de-stock\pilaartub.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\pilaartub.cpp
 	"PilaArtUb.h"
 
-1466462800 source:c:\users\galva\documents\tp-gestion-de-stock\pilacamion.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\pilacamion.cpp
 	"PilaCamion.h"
 
-1466729650 source:c:\users\galva\documents\tp-gestion-de-stock\reposicion.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\reposicion.cpp
 	"Reposicion.h"
 	<iostream>
 	<string.h>
 
-1466729653 source:c:\users\galva\documents\tp-gestion-de-stock\solicitud.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\solicitud.cpp
 	"Solicitud.h"
 	<iostream>
 	<string.h>
 
-1466426392 source:c:\users\galva\documents\tp-gestion-de-stock\ventas.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\ventas.cpp
 	"Ventas.h"
 
-1466730206 source:c:\users\galva\documents\tp-gestion-de-stock\main.cpp
+1466735645 source:c:\users\galva\documents\tp-gestion-de-stock\main.cpp
 	<iostream>
 	<fstream>
 	<stdio.h>
