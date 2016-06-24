@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <iostream>
-
 #include "Configuracion.h"
 #include "FunYProd.h"
 #include "LDeposito.h"
@@ -510,7 +509,7 @@ PtrNodoListaDeposito ptrdep=primero(listaArtDep);
                     //NO ESTA EN DEPOSITO
                     cout << "NO ESTA EN DEPOSITO, AÑADIMOS A FALTANTES" << endl;
                     Faltante faltaux2;
-                    crearFaltante(faltaux2,solicitud.cod_suc,solicitud.cod_articulo,solicitud.cantidad,0,0.00);
+                    crearFaltante(faltaux2,solicitud.cod_suc,solicitud.cod_articulo,0,solicitud.cantidad,0.00);
                     adicionarFinal(listaFaltante,faltaux2);
                 }
 
@@ -691,7 +690,7 @@ void ordenamientoSaldosagrupados(ListaPesoAcum &listaPesoAcum){
     {
         while (temporalhead ->sgtePA)
         {
-            if (temporalhead->datoPesoA.codArt > temporalhead->sgtePA->datoPesoA.codArt )
+            if (temporalhead->datoPesoA.cant < temporalhead->sgtePA->datoPesoA.cant )
             {
                temporal = temporalhead->datoPesoA.codArt;
                temporalhead->datoPesoA.codArt=temporalhead->sgtePA->datoPesoA.codArt;
@@ -831,7 +830,6 @@ constructorArtUb(artAux);
 PilaArtUb pilAux;
 crearPila(pilAux);
 ofstream SaldosDetalladosTxt("Saldos_Detallados.txt");
-SaldosDetalladosTxt<<"C\t"<<"P\t"<<"U\t"<<"Cod.Art\t"<<"Cantidad"<<endl;
 if(listaVacia(listaC)==true){
     cout<<"LISTA CAlle VACIA"<<endl;
 }
@@ -859,7 +857,7 @@ while(!listaVacia(listaC)&&ptrC!=NULL){
                 }
                 while(!pilaVacia(pilAux)){
                     artAux=pop(pilAux);
-                    SaldosDetalladosTxt<<getC(artAux)<<"\t"<<getP(artAux)<<"\t"<<getU(artAux)<<"\t"<<getDatoArt(artAux).codart<<"\t"<<getCantArtUb(artAux)<<endl;
+                    SaldosDetalladosTxt<<getC(artAux)<<", "<<getP(artAux)<<", "<<getU(artAux)<<", "<<getDatoArt(artAux).codart<<", "<<getCantArtUb(artAux)<<endl;
                     push(ptrPiso->pilUb,artAux);
                 }
 
@@ -882,8 +880,8 @@ if(listaVacia(listaPesoAcum)==true){
 }
 else{
 while(!listaVacia(listaPesoAcum)&&ptrPA!=NULL){
-pesoacumulado=ptrPA->datoPesoA.cant+pesoacumulado;
-PesoAcumuladoTxt<<ptrPA->datoPesoA.codArt<<"\t"<<ptrPA->datoPesoA.cant<<"\t"<<pesoacumulado<<endl;
+pesoacumulado=getCant(ptrPA->datoPesoA)+pesoacumulado;
+PesoAcumuladoTxt<<ptrPA->datoPesoA.codArt<<", "<<ptrPA->datoPesoA.cant<<", "<<pesoacumulado<<endl;
     ptrPA=siguiente(listaPesoAcum,ptrPA);
  }
 }
@@ -901,7 +899,7 @@ if(listaVacia(listaFaltante)==true){
 else{
 while(!listaVacia(listaFaltante)&&ptrF!=NULL){
 
-FaltanteTxt<< ptrF->datoFaltante.codsucursal<< "\t"<<ptrF->datoFaltante.codArt<<"\t"<<ptrF->datoFaltante.cantEnv<<"\t"<<ptrF->datoFaltante.cantTot<<"\t"<<ptrF->datoFaltante.porc <<"%"<<endl;
+FaltanteTxt<< ptrF->datoFaltante.codsucursal<< ", "<<ptrF->datoFaltante.codArt<<", "<<ptrF->datoFaltante.cantEnv<<", "<<ptrF->datoFaltante.cantTot<<", "<<ptrF->datoFaltante.porc <<"%"<<endl;
     ptrF=siguiente(listaFaltante,ptrF);
  }
 }
@@ -916,7 +914,7 @@ if(listaVacia(listaVentas)==true){
 }
 else{
 while(!listaVacia(listaVentas)&&ptr!=NULL){
-VentasTxt<<ptr->datoVenta.codSucursal<<"\t"<<ptr->datoVenta.montoTotal <<endl;
+VentasTxt<<ptr->datoVenta.codSucursal<<", "<<ptr->datoVenta.montoTotal <<endl;
     ptr=siguiente(listaVentas,ptr);
  }
 }
@@ -936,7 +934,7 @@ if(pilaVacia(pilaCamion)==true){
 else{
 while(!pilaVacia(pilaCamion)&&ptrPila!=NULL){
     camionAux=pop(pilaCamion);
-    CamionTxt<<getId_Camion(camionAux)<<"; "<<getCarga_T(camionAux)<<"; %"<<getPorcentaje(camionAux)<<endl;
+    CamionTxt<<getId_Camion(camionAux)<<", "<<getCarga_T(camionAux)<<", "<<getPorcentaje(camionAux)<<endl;
     push(pilaAux,camionAux);
     ptrPila=top(pilaCamion);
 }
@@ -950,3 +948,4 @@ CamionTxt.close();
 
 
 //***************************************************************
+
