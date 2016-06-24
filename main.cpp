@@ -129,6 +129,12 @@ crearCamionTxt(pilaCamion);
 
 crarFaltanteTxt(listaFaltante);
 //*************************************
-
+    eliminarLista(listaCalle);
+	eliminarLista(listaArtDep);
+	eliminarLista(listArt);
+	eliminarLista(listaPesoAcum);
+	eliminarLista(listaFaltante);
+	eliminarLista(listaVentas);
+	destruir(pilaCamion);
     return 0;
 }

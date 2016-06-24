@@ -106,7 +106,6 @@ PrtNodoListaArt ptrPrevio;
       ptrPrevio->sgteArt= ptrNodoListaArt->sgteArt;
     }
     // Si el dato es un TDA, acá habría que llamar al destructor.
-    destructorArt(ptrNodoListaArt->datoLArt);
     delete ptrNodoListaArt;
   }
 }

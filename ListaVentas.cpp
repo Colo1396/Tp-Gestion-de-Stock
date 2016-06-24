@@ -107,7 +107,6 @@ PtrNodoListaVentas ptrPrevio;
       ptrPrevio->sgteV= ptrNodoListaVent->sgteV;
     }
     // Si el dato es un TDA, acá habría que llamar al destructor.
-    destruirVentas(ptrNodoListaVent->datoVenta);
     delete ptrNodoListaVent;
   }
 }

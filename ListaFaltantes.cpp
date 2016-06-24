@@ -106,7 +106,7 @@ PtrNodoFaltante ptrPrevio;
       ptrPrevio->sgteF= ptrNodoFaltante->sgteF;
     }
     // Si el dato es un TDA, acá habría que llamar al destructor.
-    destructorFaltantes(ptrNodoFaltante->datoFaltante);
+
     delete ptrNodoFaltante;
   }
 }

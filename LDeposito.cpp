@@ -106,7 +106,7 @@ PtrNodoListaDeposito ptrPrevio;
       ptrPrevio->sgteAD= ptrNodoListaDep->sgteAD;
     }
     // Si el dato es un TDA, acá habría que llamar al destructor.
-  destruirArtDep(ptrNodoListaDep->datoArtDep);
+
     delete ptrNodoListaDep;
   }
 }

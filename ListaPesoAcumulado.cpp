@@ -108,7 +108,6 @@ PtrNodoListaPA ptrPrevio;
       ptrPrevio->sgtePA= ptrNodoListaPA->sgtePA;
     }
     // Si el dato es un TDA, acá habría que llamar al destructor.
-    destruirPesoAcum(ptrNodoListaPA->datoPesoA);
     delete ptrNodoListaPA;
   }
 }

@@ -6,6 +6,7 @@ void crearPila(PilaArtUb &pilaArtUb){
 void destruir(PilaArtUb &pilaArtUb){
     while(!pilaVacia(pilaArtUb)){
         pop(pilaArtUb);
+
     }
 }
 bool pilaVacia(PilaArtUb &pilaArtUb){

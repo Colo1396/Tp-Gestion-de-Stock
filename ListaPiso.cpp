@@ -108,7 +108,7 @@ void eliminarNodo(ListaPiso &listaP, PtrNodoPiso ptrNodoP){
       ptrPrevio->sgteP = ptrNodoP->sgteP;
     }
     // Si el dato es un TDA, acá habría que llamar al destructor.
-
+    destruir(ptrNodoP->pilUb);
     delete ptrNodoP;
   }
 }
